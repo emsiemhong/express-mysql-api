@@ -103,6 +103,9 @@ GET /api/products
 ### Setup
 1. Clone the repository.
 2. Install dependencies using npm install.
-3. Start the server using node api/index.js.
-
-Make sure to replace your_mysql_host, your_mysql_username, and your_mysql_password in the ExpressJS code with your actual MySQL database credentials before running the server.
+3. Install MySQL and MySQL Workbench
+   1. Create password 'test' for root user
+   2. create database, named 'agriculture'
+   3. import existing [mysql_dump.sql](https://github.com/emsiemhong/learning-resources/blob/main/agriculture-dashboard/mysql-dump/agriculture_test_dump.sql)
+      1. This database need to do normalization to make API work
+4. Start the server using node api/index.js.
